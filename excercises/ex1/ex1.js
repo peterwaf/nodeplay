@@ -36,5 +36,5 @@ fs.readFile('./redemption.txt', 'utf8', (error, data) => {
     })
 })
 
-const displayDateTime = require('./showTime');
+const displayDateTime = require('./Modules/showTime');
 displayDateTime()
