@@ -17,15 +17,15 @@
             
         <h1>About</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ipsa!</p>
-        <p>Fill the form</p>
+        <p style="text-decoration: underline;">Fill the form</p>
         <!-- action method specifies
          the url end point which should
          be the same as the post route in the server
          -->
         
         <form action="/submit" method="post">
-            <input type="text" name="firstName" placeholder="First Name">
-            <input type="text" name="lastName" placeholder="Last Name">
+            <input required type="text" name="firstName" placeholder="First Name">
+            <input required type="text" name="lastName" placeholder="Last Name">
             <button type="submit">Submit</button>
         </form>
         <br>
