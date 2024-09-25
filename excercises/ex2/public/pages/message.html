@@ -16,12 +16,18 @@
         </div>
             
         <h1>Thank you</h1>
-        <p>{{message}}</p>
+        <h2 id="name"></h2>
     
         <div class="footer">
             <p>Peter & Co.</p>
             <p>&copy; 2024</p>
         </div>
     </div>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const name = urlParams.get('name');
+        document.getElementById('name').innerHTML = name
+    </script>
 </body>
 </html>
