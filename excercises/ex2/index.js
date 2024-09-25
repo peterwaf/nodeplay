@@ -20,7 +20,7 @@ app.post('/submit',(req,res)=>{
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
     const fullName = firstName + ' ' + lastName;
-    res.send('Form Submitted the following name is ' + fullName);
+    res.sendFile(__dirname + '/public/pages/message.html', {message: fullName});
 })
 
 app.get('/css/style.css',(req,res)=>{
