@@ -1,5 +1,9 @@
 <footer>
-    <p>Copyright &copy; 2024</p>
+    <p id="copyright">  </p>
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById('copyright').innerHTML = `Copyright &copy; ${year}  `;
+    </script>
 </footer>
 </body>
 </html>

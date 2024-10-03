@@ -1,50 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px 40px;
+    padding: 10px 40px;
     background-color: #f2f2f2;
     height: 100px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin: 0 10px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #333;
     text-decoration: none;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     text-decoration: underline;
 }
-.logo{
+
+.logo {
     color: #333;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
 }
-h1{
+
+h1 {
     text-align: center;
-    color:#444;
-    margin:20px 0;
+    color: #444;
+    margin: 20px 0;
 
 }
 
-footer{
+footer {
     background-color: #f2f2f2;
-    padding: 20px; 
+    padding: 20px;
     text-align: center;
 }
 
-#content{min-height: 400px ;}
+#content {
+    min-height: 400px;
+}
 
-form#add-form{
+form#add-form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
@@ -53,40 +60,97 @@ form#add-form{
     justify-content: center;
 }
 
-.form-group{
+.form-group {
     margin: 10px;
     width: 100%;
 }
 
-.form-group label{
+.form-group label {
     display: block;
     margin-bottom: 5px;
 }
 
-.form-group input,.form-group textarea{
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-form#add-form button{
+
+form#add-form button {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-a#add{
+a#add {
     padding: 10px 20px;
     background-color: #333;
-   justify-content: center;
+    justify-content: center;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     margin-left: 20px;
-    text-decoration: none;}
+    text-decoration: none;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: #fcfcfc;
+    padding: 1%;
+}
+
+.article-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.article-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.article-img {
+    width: 650px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+}
+
+.article-text {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.read-more {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+
+}
