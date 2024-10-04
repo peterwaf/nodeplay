@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../includes/header.ejs') %>
+<body>
+    <%- include('../includes/nav.ejs') %>
+    <main>
+        <h2>Blog</h2>
+        <button><a href="add-blog">Add Blog</a></button>
+
+        <% if (!blogs) { %>
+         <p>No blog found</p>
+        <% } %>
+       
+            <% blogs.forEach(blog => { %>
+                <div class="article">
+                <h3 class="article-title"><%= blog.title %></h3>
+                <h4>Posted on : <%= new Date(blog.timestamp).toDateString() %></h4>
+                <img class="article-img" src="<%= blog.featuredImage %>" alt="">
+                <p class="article-body"><%= blog.body %></p>
+                <a href="/blog/?id=<%= blog.id %>">Read More</a>
+            </div>
+            <% }); %>
+        
+    </main>
+    <%- include('../includes/footer.ejs') %>
+</body>
+</html>
